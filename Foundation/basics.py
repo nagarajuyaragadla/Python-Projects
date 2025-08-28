@@ -94,3 +94,81 @@ a, b = 30, 20
 min = a if a < b else b
 print(f'Minimum value : {min}')
 
+text = 'interactive python notebook'
+print(text[1:4])
+
+text = text.replace('notebook','nb')
+print(text)
+
+text = '   interactive python notebook   '
+print(f'Before Strip : {text}')
+print(f'After Strip : {text.strip()}')
+
+
+#List, denoted as []
+technology = ["Python","AWS","Java","AIML"]
+print(f'Technologies : {technology}')
+technology.append("Javasript")
+print(f'Technologies After Append : {technology}')
+
+nums = [20,10,30,5,2,10]
+print(nums)
+print(f'nums size : {len(nums)}')
+print(f'nums sum : {sum(nums)}')
+print(max(nums))
+#print(min(nums))
+
+nums.reverse()
+print(nums)
+
+nums.sort()
+print(nums)
+
+
+# Tuple, denoted as ()
+tuple_first = (100,420,30,140,250)
+print(tuple_first)
+print(type(tuple_first))
+
+#adding another object to tuple
+temp = (4,5)
+
+tuple_first +=temp
+
+print(f'Changed tuple is : {tuple_first}')
+
+
+#Set, denoted as {}
+
+setEx = {"P1", "P2","P5","P4","P3","P2","P5"}
+print(f'SET is :{setEx}')
+setEx.add("P6")
+print(f'Modified SET is :{setEx}')
+
+setEx.update(["P9","P8"])
+print(f'Modified  SET is  with multipe :{setEx}')
+
+
+
+#Dictionary
+
+emp_dic = { 
+            "name" : "XYZ",
+            "age" : 30,
+            "desgn" : "Manager",
+            "salary" : 60000.00
+}
+
+print(emp_dic)
+print(type(emp_dic))
+
+print(emp_dic["name"])
+print(emp_dic.get("name"))
+
+emp_dic["pan_no"] = "ANAJ67KHKJ"
+print(emp_dic)
+
+# Remove 
+# pop 
+emp_dic.pop("pan_no")
+print(emp_dic)
